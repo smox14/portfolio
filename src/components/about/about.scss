@@ -1,0 +1,120 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  // background-color: #e5e5e5;
+
+  .content-wrap {
+    width: 80vw;
+    max-width: 1680px;
+    margin: 5vh auto;
+
+    .title{
+      font-size: calc(1rem + 1vw);
+      margin: 0;
+      margin-bottom: calc(2rem + 13vh);
+    
+      h2 {
+        position: absolute;
+      }
+    
+      .line {
+        height: calc(.75rem + 0.2vw);
+        width: 106%;
+        position: absolute;
+        z-index: -1;
+        top: calc(1.3rem + 1vw);
+        border-radius: .375rem;
+        background-image: linear-gradient(to right, rgb(201, 157, 201), rgb(110, 202, 224));
+      }
+    }
+
+    
+    .detail {
+      font-size: calc(1rem + 0.2vw);
+      
+      max-width: max(1000px, 80vh);
+      margin: 0 auto;
+      // border: 1px solid black;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+  
+      // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+      // backdrop-filter: blur(8px) ;
+      // background: rgba(255, 255, 255) transparent;
+      
+  
+    }
+
+    .avatar-img {
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 6rem;
+      max-width: calc(300px + 1vh);
+      img {
+        width: 100%;
+      }
+      .background {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        margin: -1.5rem auto;
+        height: 25px;
+        width: calc(300px + 1vh);
+        border-radius: 50%;
+        opacity: 0.4;
+        z-index: -1;
+        background-color: gray;
+      }
+    }
+
+
+    @media only screen and (min-width: 820px) {
+      .avatar-img {
+        max-width: 500px;
+        max-height: 500px;
+      
+        .background {
+          margin: -2.5rem auto;
+          width: 500px;
+        }
+      }
+    }
+                 
+    
+
+    // .detail:before {
+    //   content: '';
+  
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   background: inherit;
+    //   -webkit-filter: blur(50px) saturate(2);
+    //   filter: blur(50px);
+    // }
+  }
+
+  .shape {
+    position: absolute;
+    overflow-x: hidden;
+    
+    
+  }
+
+  .circle1 {
+    background-color: rgba($color: #5A6AA6, $alpha: 0.5);
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    filter: blur(1px);
+    right: 0;
+    transform: translate(40%,30%);
+    z-index: -1;
+    overflow-x: hidden;
+  }
+  
+}

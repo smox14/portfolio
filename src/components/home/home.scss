@@ -1,0 +1,151 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 100vh;
+  
+  .logo svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%,50%);
+    
+  }
+
+  .content-wrap {
+    margin-top: 0vh;
+
+    
+
+    .text {
+      text-align: center;
+      
+      .circle-container {
+        max-width: 600px;
+        position: relative;
+        text-align: center;
+        // width: calc(300px + 1rem);
+        // height: calc(300px + 1rem);
+        .circle {
+          width: calc(220px + 2vw);
+          height: calc(220px + 2vw);
+          background-color: black;
+          overflow: hidden;
+          position: relative;
+          z-index: 2;
+          border-radius: 50%;
+          color: whitesmoke;
+          text-align: center;
+        }
+      
+        @media only screen and (min-width: 820px) {
+          .circle {
+            width: calc(300px + 1vw);
+            height: calc(300px + 1vw);
+          }
+        }
+      }
+      
+  
+      .name {
+        text-transform: uppercase;
+        font-size: calc(2rem + 1vw);
+        line-height: 3%;
+        z-index: 1;
+        white-space: nowrap;
+        text-align: center;
+        letter-spacing: 2px;
+        
+        position: absolute;
+        margin: 0;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+          line-height: 20px;
+        }
+      }
+
+      
+  
+      // .nickname:before,
+      // .nickname:after {
+      //   background-color: #000;
+      //   content: "";
+      //   display: inline-block;
+      //   height: 1px;
+      //   position: relative;
+      //   vertical-align: middle;
+      //   width: 25%;
+      // }
+  
+      .nickname::before {
+        margin-right: 0.5rem;
+      }
+  
+      .nickname::after {
+        margin-left: 0.5rem;
+      }
+
+      .role h3{
+        margin-top: 15vh;
+        font-weight: 300;
+        font-size: calc(0.7rem + 1vw);
+      }
+    }
+
+    .buttons {
+      margin-top: 5vh;
+      display: flex;
+      justify-content: space-around;
+      
+
+      a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #FFF;
+        // border: black 1px solid;
+        background-color: rgb(120 120 120);
+        border-radius: 30px;
+        font-size: calc(0.7rem + 0.3vw);
+        overflow: hidden;
+        box-shadow: 0px 1px 10px 0px rgb(206, 205, 201);
+        
+
+        p {
+          margin: 0;
+        }
+      }
+
+      a:hover {
+        background-color: black;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+    }
+  }
+  
+  .icon-down {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .icon-down:hover {
+    
+  }
+
+    @keyframes flo {
+      50% {
+        transform: translate(-50%,30px);
+      }
+    }
+}
