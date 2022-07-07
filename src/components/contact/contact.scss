@@ -13,7 +13,7 @@
     width: 80vw;
     
     max-width: 1680px;
-    margin: 5vh auto;
+    margin: 30px auto;
 
     
 
@@ -61,8 +61,8 @@
     }
       
     .footer {
-      // position: absolute;
-      margin-top: 4rem;
+      
+      padding-top: calc(50px + 1vh);
       font-size: 0.7rem;
       text-align: center;
     }  
