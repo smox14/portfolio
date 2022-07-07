@@ -56,7 +56,7 @@ export default function Home({offsetY}) {
         </div>
 
         <div className="buttons">
-          <a href={Resume} target="_blank" rel="noreferrer" 
+          <a href="https://drive.google.com/file/d/19xmtWyedn1djYS6VkugxEozOoznaUwjv/view?usp=sharing" target="_blank" rel="noreferrer" 
             style={{ transform: `translate(0%,${offsetY * -0.1}px)`}}
           >
             <p className="resume button">Resume</p></a>
